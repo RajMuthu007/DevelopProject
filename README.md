@@ -31,3 +31,12 @@
                 mediaLoadData.trackSelectionReason, mediaLoadData.trackSelectionData, mediaLoadData.mediaStartTimeMs, mediaLoadData.mediaEndTimeMs,
                 loadEventInfo.elapsedRealtimeMs);
     }
+89899898443
+
+
+ @Override
+    public void onLoadCanceled(int windowIndex, @Nullable MediaSource.MediaPeriodId mediaPeriodId, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
+        log("load canceled", loadEventInfo.dataSpec, mediaLoadData.dataType, mediaLoadData.trackType, mediaLoadData.trackFormat,
+                mediaLoadData.trackSelectionReason, mediaLoadData.trackSelectionData, mediaLoadData.mediaStartTimeMs, mediaLoadData.mediaEndTimeMs,
+                loadEventInfo.elapsedRealtimeMs);
+    }
